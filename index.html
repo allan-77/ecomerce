@@ -3,53 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-commerce Table</title>
+  <title>E-commerce Product Table</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 20px;
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                  url("https://images.unsplash.com/photo-1523275335684-37898b6baf30") 
-                  no-repeat center center fixed;
+      margin: 0;
+      /* Full-page background image */
+      background: url('ecomerce.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #333;
     }
 
+    /* Hero Banner */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url("ecomerce.jpg") no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    }
+
+    .hero .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #007BFF;
+      color: white;
+      border-radius: 25px;
+      font-size: 16px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .hero .btn:hover {
+      background: #0056b3;
+    }
+
+    /* Table Styling */
     h2 {
       text-align: center;
-      margin-bottom: 20px;
-      color: #fff;
+      margin: 30px 0 20px;
       font-size: 28px;
       letter-spacing: 1px;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+      color: #007BFF;
     }
 
     table {
-      width: 100%;
+      width: 90%;
+      margin: auto;
       border-collapse: collapse;
       background: #fff;
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
       transition: 0.3s ease;
-    }
-
-    table:hover {
-      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-      transform: scale(1.01);
     }
 
     th, td {
       padding: 14px;
       text-align: center;
-      transition: 0.3s ease;
     }
 
     th {
       background: #007BFF;
       color: white;
       font-size: 15px;
-      letter-spacing: 0.5px;
       position: sticky;
       top: 0;
       z-index: 1;
@@ -110,11 +140,29 @@
       color: #007BFF;
       font-size: 12px;
     }
+
+    /* Footer */
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      background: #007BFF;
+      color: white;
+      padding: 15px;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
 
-  <h2>📦 E-commerce Product Table</h2>
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Welcome to Smart Deals</h1>
+    <p>Find the best products from top e-commerce platforms in one place.</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </div>
+
+  <!-- Table -->
+  <h2 id="products">📦 E-commerce Product Table</h2>
 
   <table>
     <tr>
@@ -208,7 +256,136 @@
         </ul>
       </td>
     </tr>
+
+    <tr>
+      <td>Jumia</td>
+      <td><img src="Jumia-logo-square-e1475170556833.png" alt="Jumia Icon"></td>
+      <td>Blender</td>
+      <td>Home Appliances</td>
+      <td>
+        <ul>
+          <li>500W Motor</li>
+          <li>2L Jar</li>
+          <li>Multi-speed Control</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Ebay</td>
+      <td><img src="ebay.avif" alt="Ebay Icon"></td>
+      <td>Backpack</td>
+      <td>Fashion</td>
+      <td>
+        <ul>
+          <li>Waterproof</li>
+          <li>30L Capacity</li>
+          <li>Lightweight</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Alibaba</td>
+      <td><img src="alibaba-logo-transparent-free-png.png" alt="Alibaba Icon"></td>
+      <td>Microwave Oven</td>
+      <td>Home Appliances</td>
+      <td>
+        <ul>
+          <li>20L Capacity</li>
+          <li>900W Power</li>
+          <li>Defrost Function</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Shopify</td>
+      <td><img src="shopify.jpg" alt="Shopify Icon"></td>
+      <td>Wrist Watch</td>
+      <td>Accessories</td>
+      <td>
+        <ul>
+          <li>Leather Strap</li>
+          <li>Water Resistant</li>
+          <li>Analog Display</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Amazon</td>
+      <td><img src="amazon.webp" alt="Amazon Icon"></td>
+      <td>Tablet</td>
+      <td>Electronics</td>
+      <td>
+        <ul>
+          <li>10-inch Display</li>
+          <li>64GB Storage</li>
+          <li>Long Battery Life</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Jumia</td>
+      <td><img src="Jumia-logo-square-e1475170556833.png" alt="Jumia Icon"></td>
+      <td>Refrigerator</td>
+      <td>Home Appliances</td>
+      <td>
+        <ul>
+          <li>Double Door</li>
+          <li>Frost Free</li>
+          <li>Energy Saving</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Ebay</td>
+      <td><img src="ebay.avif" alt="Ebay Icon"></td>
+      <td>Gaming Console</td>
+      <td>Electronics</td>
+      <td>
+        <ul>
+          <li>4K Gaming</li>
+          <li>1TB Storage</li>
+          <li>Wireless Controller</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Alibaba</td>
+      <td><img src="alibaba-logo-transparent-free-png.png" alt="Alibaba Icon"></td>
+      <td>Air Conditioner</td>
+      <td>Home Appliances</td>
+      <td>
+        <ul>
+          <li>1.5 Ton</li>
+          <li>Energy Efficient</li>
+          <li>Fast Cooling</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Shopify</td>
+      <td><img src="shopify.jpg" alt="Shopify Icon"></td>
+      <td>Sofa Set</td>
+      <td>Furniture</td>
+      <td>
+        <ul>
+          <li>3+2+1 Seater</li>
+          <li>Premium Fabric</li>
+          <li>Durable Frame</li>
+        </ul>
+      </td>
+    </tr>
+
   </table>
 
-</body>
-</html>
+  <!-- Footer -->
+  <div class="footer">
+    <p>✨ Thank you for visiting Smart Deals. Happy Shopping!
+
